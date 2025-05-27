@@ -94,7 +94,10 @@ export function App() {
             }}
           />
 
-          {transactions !== null && paginatedTransactions !== null && paginatedTransactions.nextPage !== null && (
+          {transactions !== null && 
+           paginatedTransactions !== null && 
+           transactionsByEmployee === null && 
+           paginatedTransactions.nextPage !== null && (
             <button
               className="RampButton"
               disabled={paginatedTransactionsUtils.loading}
